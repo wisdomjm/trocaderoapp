@@ -1,0 +1,7 @@
+{
+  "name": "trocaApp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
