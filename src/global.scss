@@ -24,3 +24,64 @@
 @import "@ionic/angular/css/text-alignment.css";
 @import "@ionic/angular/css/text-transformation.css";
 @import "@ionic/angular/css/flex-utils.css";
+@import "~leaflet/dist/leaflet.css";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Tamaño de los iconos*/
+.icon-large{
+    font-size: 28px;
+}
+
+.icon-medium{
+    font-size: 24px;
+}
+
+.icon-small{
+    font-size: 16px;
+}
+
+/* Texto header*/
+.main-label{
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.sub-header{
+    font-size: 16px;
+    font-weight: 200;
+    color: #233d4d;
+}
+
+.space{
+    width: 100%;
+    height: 24px;
+}
+
+.texto-60{
+    color: #2b2d42;
+}
+
+.main-header-top{
+    width: 100%;
+    height: 28px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 12px auto;
+}
+
+.sub-header-top{
+    width: 100%;
+    height: 28px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 12px auto;
+}
+

@@ -1,0 +1,140 @@
+<ion-header class="ion-no-border" lines="none">
+  <ion-toolbar mode="md" class="ion-no-border" color="violeta">  
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <!--Logo de la Aplicacion y los Iconos-->
+    <div class="main-header-top">
+      <h1 style="font-size: 26px; font-weight: 400; margin-left: 12px; color: azure; margin-top: -5px;">
+        Trocadero<span style="font-size: 34px; font-weight: 600;">s</span>hop
+      </h1>
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <!--Crear un nuevo producto-->
+
+  <swiper-container [slidesPerView]="1" [pagination]="true">
+    <swiper-slide >
+      <div class="contenido-swiper">
+        <div class="imagen-banner">
+          <img src="../../assets/woman-5467838_1280.jpg" alt="banner">
+        </div>
+        
+        <h1>Agregar un Producto</h1>
+        <p>
+          Si eres vendedor <br>aqui podras Registrar tus productos.
+        </p>
+        <h4>Desliza la Pantalla para iniciar</h4>
+      </div>
+    </swiper-slide>
+
+    <swiper-slide >
+      <div class="contenido-swiper">
+        <h1>Nombre Producto</h1>
+        <!--Nombre del producto-->
+        <ion-item >
+          <ion-input label="Nombre del Producto" 
+            labelPlacement="stacked" 
+            placeholder="Nombre del Producto" 
+            color="violeta"
+            type="text">
+          </ion-input>
+        </ion-item>
+      </div>
+    </swiper-slide>
+
+    <swiper-slide >
+      <div class="contenido-swiper">
+        <h1>Categoria</h1>
+        <!--categoria-->
+        <ion-item>
+          <ion-select label="Selecciona una Categoria" label-placement="stacked">
+            <ion-select-option value="{{categoria.nombre}}" *ngFor="let categoria of categorias">{{categoria.nombre}}</ion-select-option>
+          </ion-select>
+        </ion-item>
+      </div>
+    </swiper-slide>
+
+    <swiper-slide >
+      <div class="contenido-swiper">
+        <h1>Descripcion Larga</h1>
+        <!--Descripcion larga del producto-->
+        <ion-textarea label="Descripcion Larga" 
+          labelPlacement="stacked" 
+          placeholder="Ingresa texto"
+          fill="outline"
+          [counter]="true"
+          [autoGrow]="true"
+          maxlength="1000">
+        </ion-textarea>
+      </div>
+    </swiper-slide>
+
+    <swiper-slide >
+      <div class="contenido-swiper">
+        <h1>Descripcion Corta</h1>
+        <!--Descripcion corta del producto-->
+
+        <ion-textarea label="Descripcion Corta" 
+          labelPlacement="stacked" 
+          placeholder="Ingresa texto"
+          fill="outline"
+          [autoGrow]="true"
+          [counter]="true"
+          maxlength="200">
+        </ion-textarea>
+
+      </div>
+    </swiper-slide>
+
+    <swiper-slide >
+      <div class="contenido-swiper">
+        <h1>Precio del Producto</h1>
+        <!--precio del producto-->
+        <ion-item>
+          <ion-input label="Precio del Producto" 
+            labelPlacement="stacked" 
+            placeholder="$ precio" 
+            color="violeta"
+            type="number">
+          </ion-input>
+        </ion-item>
+      </div>
+    </swiper-slide>
+
+    <swiper-slide >
+      <div class="contenido-swiper">
+        <h1>Cantidad Disponible</h1>
+        <!--cantidad dispnible del producto-->
+        <ion-item>
+          <ion-input label="Cantidad del Producto" 
+            labelPlacement="stacked" 
+            placeholder="Cantidad" 
+            color="violeta"
+            type="number">
+          </ion-input>
+        </ion-item>
+      </div>
+    </swiper-slide>
+
+    <swiper-slide >
+      <div class="contenido-swiper">
+        <h1>Cargar Imagenes</h1>
+        <!--Imagenes del producto-->
+        <div class="imagenes-producto">
+          <p class="ion-text-center">
+            No hay imagen Disponible
+          </p>
+        </div>
+        <br>
+        <ion-button color="violeta" expand="block">Cargar</ion-button>
+ 
+      </div>
+    </swiper-slide>
+
+  </swiper-container>
+
+</ion-content>

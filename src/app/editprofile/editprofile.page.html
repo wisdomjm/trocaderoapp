@@ -1,0 +1,69 @@
+<ion-header [translucent]="true" class="ion-no-border">
+  <ion-toolbar mode="md" class="ion-no-border">
+    <ion-title>Perfil</ion-title>
+    <ion-icon name="exit-outline" 
+      slot="end" 
+      color="violeta" 
+      routerLink="/home" 
+      class="icon-medium" 
+      style="margin-right: 12px;">
+    </ion-icon>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  <div class="imagen-de-perfil">
+    <img src="../../assets/profiles/profile11.jpg" alt="">
+    <p class="ion-text-center" 
+      style="font-weight: 600; font-size: 32px; margin-top: -20px; margin-right: -50px;">
+      <ion-icon name="checkbox" color="violeta"></ion-icon>
+    </p>
+  </div>
+  <div class="space"></div>
+
+  <!--Lista de campos a Editar-->
+  <ion-list color="violeta">
+
+    <!--nombres y apellidos-->
+    <ion-item>
+      <ion-input Placeholder="Nombres y Apellidos" type="text">
+        <ion-icon name="people-outline" slot="start" color="violeta"></ion-icon>
+      </ion-input>
+    </ion-item>
+
+    <!--Direccion-->
+    <ion-item>
+      <ion-input Placeholder="Direccion" type="text">
+        <ion-icon name="location-outline" slot="start" color="violeta"></ion-icon>
+      </ion-input>
+    </ion-item>
+
+    <!--telefono-->
+    <ion-item>
+      <ion-input Placeholder="Telefono" type="tel">
+        <ion-icon name="call-outline" slot="start" color="violeta"></ion-icon>
+      </ion-input>
+    </ion-item>
+
+    <!--email-->
+    <ion-item>
+      <ion-input Placeholder="Email" type="email">
+        <ion-icon name="mail-outline" slot="start" color="violeta"></ion-icon>
+      </ion-input>
+    </ion-item>
+
+    <!--fecha de nacimiento-->
+    <!--ion-item>
+      <ion-input Placeholder="Fecha de Nacimiento DD/MM/YY" type="email">
+        <ion-icon name="calendar-outline" slot="start" color="violeta"></ion-icon>
+      </ion-input>
+    </ion-item-->
+
+    <div class="space"></div>
+  <!--ion-button expand="block" color="violeta">GUARDAR</ion-button-->
+  <ion-button expand="block" color="violeta" fill="outline" routerLink="/addnewproduct">QUIERES VENDER?</ion-button>
+
+
+  </ion-list>
+
+</ion-content>

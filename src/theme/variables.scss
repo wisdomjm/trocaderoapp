@@ -3,6 +3,21 @@
 
 /** Ionic CSS Variables **/
 :root {
+
+  --ion-color-violeta: #7209b7;
+	--ion-color-violeta-rgb: 114,9,183;
+	--ion-color-violeta-contrast: #ffffff;
+	--ion-color-violeta-contrast-rgb: 255,255,255;
+	--ion-color-violeta-shade: #6408a1;
+	--ion-color-violeta-tint: #8022be;
+
+  --ion-color-verde: #70e000;
+	--ion-color-verde-rgb: 112,224,0;
+	--ion-color-verde-contrast: #000000;
+	--ion-color-verde-contrast-rgb: 0,0,0;
+	--ion-color-verde-shade: #63c500;
+	--ion-color-verde-tint: #7ee31a;
+
   /** primary **/
   --ion-color-primary: #3880ff;
   --ion-color-primary-rgb: 56, 128, 255;
@@ -74,6 +89,24 @@
   --ion-color-light-contrast-rgb: 0, 0, 0;
   --ion-color-light-shade: #d7d8da;
   --ion-color-light-tint: #f5f6f9;
+}
+
+.ion-color-violeta {
+	--ion-color-base: var(--ion-color-violeta);
+	--ion-color-base-rgb: var(--ion-color-violeta-rgb);
+	--ion-color-contrast: var(--ion-color-violeta-contrast);
+	--ion-color-contrast-rgb: var(--ion-color-violeta-contrast-rgb);
+	--ion-color-shade: var(--ion-color-violeta-shade);
+	--ion-color-tint: var(--ion-color-violeta-tint);
+}
+
+.ion-color-verde {
+	--ion-color-base: var(--ion-color-verde);
+	--ion-color-base-rgb: var(--ion-color-verde-rgb);
+	--ion-color-contrast: var(--ion-color-verde-contrast);
+	--ion-color-contrast-rgb: var(--ion-color-verde-contrast-rgb);
+	--ion-color-shade: var(--ion-color-verde-shade);
+	--ion-color-tint: var(--ion-color-verde-tint);
 }
 
 @media (prefers-color-scheme: dark) {

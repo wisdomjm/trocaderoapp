@@ -1,0 +1,44 @@
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  <div class="space"></div>
+  <div class="space"></div>
+  
+  <!--Logo de la Aplicacion-->
+  <h1 class="ion-text-center texto-60" 
+    style="font-weight: 800; font-size: 42px;">
+    Trocadero<span style="font-size: 52px; color: #7209b7;">S</span>hop
+  </h1>
+
+  <!--Campos para iniciar Sesion-->
+  <div class="space"></div>
+  <div class="space"></div>
+  <div class="space"></div>
+
+  <ion-list>
+    <ion-item>
+      <ion-input type="text" Placeholder="Email">
+        <ion-icon name="mail" slot="start" color="violeta"></ion-icon>
+      </ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input type="password" Placeholder="Contraseña">
+        <ion-icon name="lock-open-outline" slot="start" color="violeta"></ion-icon>
+      </ion-input>
+    </ion-item>
+
+    <div class="space"></div>
+    <ion-radio value="sesion" labelPlacement="start" color="violeta">
+      <p class="ion-text-center">Acepto Terminos y Condiciones</p>
+    </ion-radio>
+    <div class="space"></div>
+
+    <!--ion-button color="violeta" expand="block" routerLink="/apptabs/mainstore">Registrarse</ion-button-->
+    <ion-button color="violeta" expand="block" routerLink="/adduserinformation">Registrarse</ion-button>
+  </ion-list>
+  
+  
+  <div class="space"></div>
+  <div class="space"></div>
+  <div class="space"></div>
+  <p class="ion-text-center">Ya tienes un cuenta? <strong routerLink="/signin">Inicia Sesion</strong></p>
+</ion-content>

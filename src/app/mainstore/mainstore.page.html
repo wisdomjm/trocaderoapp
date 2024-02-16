@@ -1,0 +1,160 @@
+<ion-header class="ion-no-border" lines="none">
+  <ion-toolbar mode="md" class="ion-no-border" color="violeta">  
+    
+    <!--Logo de la Aplicacion y los Iconos-->
+    <div class="main-header-top">
+      <h1 style="font-size: 26px; font-weight: 400; margin-left: 12px; color: azure; margin-top: -5px;">
+        Trocadero<span style="font-size: 34px; font-weight: 600;">s</span>hop
+      </h1>
+
+      <div class="icons">
+        <!--iconos-->
+        <ion-icon name="notifications" 
+          color="light" 
+          style="margin-right: 16px;" 
+          class="icon-medium"
+          routerLink="/notifications">
+        </ion-icon>
+        <ion-icon name="search-outline" 
+          color="light" 
+          style="margin-right: 16px;" 
+          class="icon-medium">
+        </ion-icon>
+      </div>
+    </div>
+
+  </ion-toolbar>
+</ion-header>
+
+<!--Contenido Principal de la Aplicacion-->
+<ion-content class="ion-padding">
+
+  <!--CATEGORIAS-->
+  <h1 class="main-label">Categorias</h1>
+  <swiper-container [slidesPerView]="3.5" [spaceBetween]="10">
+    <swiper-slide *ngFor="let categoria of categorias">
+      <h2 class="items-categoria">{{categoria.nombre}}</h2>
+    </swiper-slide>
+  </swiper-container>
+
+ 
+
+  <!--NUEVOS PRODUCTOS-->
+  <div class="main-header">
+    <h1 class="main-label">Productos</h1>
+    <p class="sub-header">Ver todos</p>
+  </div>
+
+  <!--CARGA LA LISTA DE PRODUCTOS-->
+  <ion-list lines="none">
+    
+    <div class="contenedor-de-productos" *ngFor="let misproductos of productos">
+      <div class="imagen-producto">
+        <img src="{{misproductos.imagen}}" alt="">
+      </div>
+      <div class="detalles-del-producto">
+        <h1>{{misproductos.nombre}}</h1>
+        <p>{{misproductos.categoria}}</p>
+        <h4>$ {{misproductos.precio}}</h4>
+        <p>
+          <ion-icon name="star"></ion-icon>
+          <span>{{ misproductos.calificacion}}</span>
+        </p>
+        <!--ver mas informacion del producto-->
+        <button class="boton-comprar" routerLink="/productdetail">Ver</button>
+      </div>
+    </div>
+
+  </ion-list>
+  
+
+  <br>
+ 
+
+  <!--PRODUCTOS DESTACADOS-->
+  <div class="main-header">
+    <h1 class="main-label">Destacados</h1>
+    <p class="sub-header">Ver todos</p>
+  </div>
+
+  <swiper-container [slidesPerView]="3" [spaceBetween]="16" [autoplay]="true">
+    <swiper-slide *ngFor="let destacados of productosDestacados">
+      <div class="contenedor-productos-destacados" routerLink="/productdetail">
+        <div class="imagen-producto-destacado">
+          <img src="{{destacados.imagen}}" alt="">
+        </div>
+        <div class="descripcion-producto-destacado">
+          <h1>{{destacados.nombre}}</h1>
+          <p>{{destacados.categoria}}</p>
+          <p>
+            <ion-icon name="star" color="violeta"></ion-icon>
+            <span>{{ destacados.calificacion}}</span>
+          </p>
+        </div>
+      </div>
+      
+    </swiper-slide>
+  </swiper-container>
+
+
+
+  <!--PRODUCTOS EN OFERTAS-->
+  <div class="main-header">
+    <h1 class="main-label">Regalos</h1>
+    <!--p class="sub-header">Ver todos</p-->
+  </div>
+  <br>
+
+  <div class="wrapper">
+    <div class="card-products">
+      <div class="image-categoria-producto">
+        <img src="../../assets/fashion/fashion7.jpg" alt="">
+      </div>
+      <div class="detalle-categoria-producto ion-padding">
+        <h1>producto</h1>
+        <p>Lorem, ipsum dolor.</p>
+      </div>
+    </div>
+
+    <div class="card-products">
+      <div class="image-categoria-producto">
+        <img src="../../assets/fashion/fashion7.jpg" alt="">
+      </div>
+      <div class="detalle-categoria-producto ion-padding">
+        <h1>producto</h1>
+        <p>Lorem, ipsum dolor.</p>
+      </div>
+    </div>
+
+    <div class="card-products">
+      <div class="image-categoria-producto">
+        <img src="../../assets/fashion/fashion7.jpg" alt="">
+      </div>
+      <div class="detalle-categoria-producto ion-padding">
+        <h1>producto</h1>
+        <p>Lorem, ipsum dolor.</p>
+      </div>
+    </div>
+
+    <div class="card-products">
+      <div class="image-categoria-producto">
+        <img src="../../assets/fashion/fashion7.jpg" alt="">
+      </div>
+      <div class="detalle-categoria-producto ion-padding">
+        <h1>producto</h1>
+        <p>Lorem, ipsum dolor.</p>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!--MARCAS-->
+  <!--div class="main-header">
+    <h1 class="main-label">Marcas</h1>
+    <p class="sub-header">Ver todos</p>
+  </div-->
+
+  <!--OTROS-->
+
+</ion-content>

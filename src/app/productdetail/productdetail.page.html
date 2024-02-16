@@ -1,0 +1,102 @@
+<ion-header class="ion-no-border" lines="none">
+  <ion-toolbar mode="md" class="ion-no-border" color="violeta">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>
+      <p>Detalle Producto</p>
+    </ion-title>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div class="image_product">
+    <img src="../../assets/fashion/fashion6.jpg" alt="">
+  </div>
+
+  <div class="header-producto">
+    <h1 class="nombre-producto">Nombre del Producto</h1>
+    <ion-icon name="heart-outline" slot="end" class="icon-medium"></ion-icon>
+  </div>
+
+  <p class="comentarios-producto">
+    <ion-icon name="star-half" color="violeta"></ion-icon> <span> 4.7 (120 comentarios)</span>
+
+    <ion-chip [outline]="true" color="medium">
+      <ion-icon name="location-outline"></ion-icon>
+      <ion-label>ver Mapa</ion-label>
+    </ion-chip>
+
+  </p>
+  
+  <div id="mapId" class="map"></div>  
+
+  <h1 class="main-label">Descripcion</h1>
+
+  <p class="descripcion-producto">
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+    Sint aliquam saepe fugiat deserunt maxime earum recusandae quibusdam quas?
+    Recusandae quaerat voluptates dicta minus excepturi? Consequuntur dolores,
+    blanditiis eius maiores nisi totam. <br>Dolorum vel quam provident
+    nam aliquam perferendis adipisci ullam! Saepe ex possimus iste aspernatur
+    eum, voluptas hic consequuntur officiis?
+    Id tenetur nisi quo sed quaerat dolorem omnis deserunt incidunt.
+  </p>
+
+  <h1 class="precio-producto">$100</h1>
+  <br>
+  <div class="cantidad-producto">
+    <h2>Cantidad: 1 <span>(10 Disponibles)</span></h2>
+    <ion-icon name="chevron-forward-outline" style="font-size: 22px;"></ion-icon>
+  </div>
+  <br>
+  <br>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="6">
+        <ion-button color="violeta" expand="block" style="font-size: 10px;">
+          Comprar Ahora
+        </ion-button>
+      </ion-col>
+      <ion-col size="6">
+        <ion-button color="dark" expand="block" fill="outline" style="font-size: 10px;">
+          Agregar al Carrito
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+
+
+
+
+  <!--Vendido por-->
+  <br>
+  <p class="nombre-vendedor">Vendido por <strong color="violeta">Shopstore</strong></p>
+
+  <!--Mas Productos del vendedor-->
+
+  <!--preguntar al vendedor-->
+  <ion-item lines="none">
+    <ion-textarea label="Preguntar" labelPlacement="stacked" placeholder="Pregunta la Vendedor" [counter]="true"
+      maxlength="250" [autoGrow]="true"></ion-textarea>
+  </ion-item>
+  <br>
+  <ion-button color="violeta" expand="block">Preguntar</ion-button>
+
+  <br>
+  <!--Ultimas Preguntas-->
+  <h1 class="main-label" style="font-weight: 400;">Ultimas Preguntas</h1>
+
+
+  <div style="width: 100%; height: auto;">
+    <p class="preguntas-clientes">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates eum qui esse.</p>
+  </div>
+
+
+
+
+
+
+</ion-content>

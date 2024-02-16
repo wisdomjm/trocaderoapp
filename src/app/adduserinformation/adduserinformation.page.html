@@ -1,0 +1,107 @@
+<!--ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>adduserinformation</ion-title>
+  </ion-toolbar>
+</ion-header-->
+
+<ion-content class="ion-padding">
+  <swiper-container [slidesPerView]="1" [pagination]="true">
+    <swiper-slide >
+      <!--Logo de la Aplicacion-->
+      <h1 class="ion-text-center texto-60" 
+        style="font-weight: 800; font-size: 42px;">
+        Trocadero<span style="font-size: 52px; color: #7209b7;">S</span>hop
+      </h1>
+      <div class="contenido-swiper">
+        <h1>
+          Datos del Usuario
+        </h1>  
+        <p>
+            Bienvenido a TrocaderoShop <br>
+            rellena los siguientes campos para<br>
+            completar tu <strong>Registro.</strong> 
+        </p>
+        <h4>Desliza la Pantalla para iniciar</h4>
+      </div>
+    </swiper-slide>
+
+    <swiper-slide >
+      <h1 class="ion-text-center texto-60" 
+        style="font-weight: 800; font-size: 42px;">
+        Trocadero<span style="font-size: 52px; color: #7209b7;">S</span>hop
+      </h1>
+      <div class="contenido-swiper">
+        <h1>Nombre y apellidos</h1>
+        <!--Nombre del producto-->
+        <ion-item >
+          <ion-input label="Nombre" 
+            labelPlacement="stacked" 
+            placeholder="Tu Nombre" 
+            color="violeta"
+            type="text">
+          </ion-input>
+        </ion-item>
+        <ion-item >
+          <ion-input label="Apellidos" 
+            labelPlacement="stacked" 
+            placeholder="Tus Apellidos" 
+            color="violeta"
+            type="text">
+          </ion-input>
+        </ion-item>
+      </div>
+    </swiper-slide>
+
+    <swiper-slide>
+      <h1 class="ion-text-center texto-60" 
+        style="font-weight: 800; font-size: 42px;">
+        Trocadero<span style="font-size: 52px; color: #7209b7;">S</span>hop
+      </h1>
+      <div class="contenido-swiper">
+        <h1>Direccion</h1>
+        <!--Nombre del producto-->
+        <ion-item >
+          <ion-input label="Direccion" 
+            labelPlacement="stacked" 
+            placeholder="Tu Direccion" 
+            color="violeta"
+            type="text">
+          </ion-input>
+        </ion-item>
+      </div>
+    </swiper-slide>
+
+    <swiper-slide>
+      <h1 class="ion-text-center texto-60" 
+        style="font-weight: 800; font-size: 42px;">
+        Trocadero<span style="font-size: 52px; color: #7209b7;">S</span>hop
+      </h1>
+      <div class="contenido-swiper">
+        <h1>Telefono</h1>
+        <!--Nombre del producto-->
+        <ion-item >
+          <ion-input label="Telefono" 
+            labelPlacement="stacked" 
+            placeholder="Numero de Telefono" 
+            color="violeta"
+            type="text">
+          </ion-input>
+        </ion-item>
+      </div>
+    </swiper-slide>
+
+    <swiper-slide >
+      <h1 class="ion-text-center texto-60" 
+        style="font-weight: 800; font-size: 42px;">
+        Trocadero<span style="font-size: 52px; color: #7209b7;">S</span>hop
+      </h1>
+      <div class="contenido-swiper">
+        <h1>Guardar Informacion</h1>
+        <!--Nombre del producto-->
+        <ion-button color="violeta" expand="block" routerLink="/signin">Registrarse</ion-button>
+      </div>
+    </swiper-slide>
+
+
+  </swiper-container>
+</ion-content>

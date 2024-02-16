@@ -1,0 +1,51 @@
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  <div class="space"></div>
+  <div class="space"></div>
+  
+  <!--Logo de la Aplicacion-->
+  <h1 class="ion-text-center texto-60" 
+    style="font-weight: 800; font-size: 42px;">
+    Trocadero<span style="font-size: 52px; color: #7209b7;">S</span>hop
+  </h1>
+
+  <!--Campos para iniciar Sesion-->
+  <div class="space"></div>
+  <div class="space"></div>
+  <div class="space"></div>
+
+  <ion-list color="violeta">
+    <!--email-->
+    <ion-item>
+      <ion-input Placeholder="Email" type="email">
+        <ion-icon name="mail" slot="start" color="violeta"></ion-icon>
+      </ion-input>
+    </ion-item>
+
+    <!--contraseña-->
+    <ion-item>
+      <ion-input type="password" placeholder="Contraseña">
+        <ion-icon name="lock-open" slot="start" color="violeta"></ion-icon>
+        <ion-icon name="eye-off-outline" slot="end" color="dark"></ion-icon>
+      </ion-input>
+    </ion-item>
+
+    <!--recordar contraseña-->
+    <ion-radio value="sesion" labelPlacement="start" color="violeta">
+      <p class="ion-text-center">Mantener Sesion</p>
+    </ion-radio>
+    
+  </ion-list>
+
+  <!--Iniciar sesion-->
+  <div class="space"></div>
+  <ion-button expand="block" color="violeta" routerLink="/apptabs/mainstore">Iniciar Sesion</ion-button>
+
+  <!--Registrarse en la app-->
+  <div class="space"></div>
+  <h2 class="ion-text-center" style="font-size: 18px; font-weight: 200;">
+    No tienes Cuenta, <strong style="font-size: 16px; font-weight: 400;" 
+    routerLink="/signup">REGISTRATE</strong>
+  </h2>
+
+</ion-content>

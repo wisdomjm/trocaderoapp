@@ -1,0 +1,18 @@
+.main-header-top{
+    width: 100%;
+    height: 28px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 12px auto;
+}
+
+.sub-header-top{
+    width: 100%;
+    height: 28px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 12px auto;
+}

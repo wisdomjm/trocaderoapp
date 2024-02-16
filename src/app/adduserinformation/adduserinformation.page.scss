@@ -1,0 +1,42 @@
+.contenido-swiper{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+
+    .imagen-banner{
+        width: 100%;
+        height: 240px;
+        object-fit: contain;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    h1{
+        width: 100%;
+        height: 30%h;
+        font-size: 42px;
+        font-weight: 500;
+        text-align: left;
+        margin-top: 60px;
+    }
+
+    p{
+        width: 100%;
+        height: 20%h;
+        font-size: 22px;
+        font-weight: 300;
+        text-align: left;
+    }
+
+    h4{
+        width: 100%;
+        height: 20%h;
+        font-size: 16px;
+        font-weight: 200;
+        text-align: left;
+        margin-top: 60px;
+    }
+}
